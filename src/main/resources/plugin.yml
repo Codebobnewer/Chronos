@@ -1,0 +1,15 @@
+name: Chronos
+version: '${project.version}'
+main: me.goga221.chronos.Chronos
+api-version: '1.21'
+author: goga221
+folia-supported: true
+depend: [CommandAPI]
+
+permissions:
+  chronos.time.use:
+    description: Allows viewing the current in-game date and time.
+    default: true
+  chronos.time.admin:
+    description: Allows setting or advancing the in-game calendar.
+    default: op

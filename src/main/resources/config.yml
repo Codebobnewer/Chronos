@@ -1,0 +1,83 @@
+# Chronos calendar configuration.
+# All values here are read once at startup; restart the server after editing.
+
+# Modeled on Hypixel SkyBlock's calendar: 12 seasonal months of 31 days
+# each (372-day year), no meaningful "week" subdivision (weeks-per-month is
+# 1 and days-per-week is 31 to represent that within this structure), and a
+# day that lasts exactly 20 real minutes, matching vanilla Minecraft's
+# day/night cycle length.
+calendar:
+  months-per-year: 12
+  weeks-per-month: 1
+  days-per-week: 31
+  hours-per-day: 24
+  minutes-per-hour: 60
+  seconds-per-minute: 60
+  month-names:
+    - Early Spring
+    - Spring
+    - Late Spring
+    - Early Summer
+    - Summer
+    - Late Summer
+    - Early Autumn
+    - Autumn
+    - Late Autumn
+    - Early Winter
+    - Winter
+    - Late Winter
+  day-names:
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+    - "9"
+    - "10"
+    - "11"
+    - "12"
+    - "13"
+    - "14"
+    - "15"
+    - "16"
+    - "17"
+    - "18"
+    - "19"
+    - "20"
+    - "21"
+    - "22"
+    - "23"
+    - "24"
+    - "25"
+    - "26"
+    - "27"
+    - "28"
+    - "29"
+    - "30"
+    - "31"
+
+# How real time maps to game time.
+# 1 game day (24 game hours = 86400 game seconds) = 20 real minutes (1200
+# real seconds), same as Hypixel SkyBlock and vanilla Minecraft: 86400 / 1200 = 72.0
+time-conversion:
+  game-seconds-per-real-second: 72.0
+  # How often, in server ticks (20 ticks = 1 real second), the clock advances.
+  tick-interval-ticks: 20
+
+# Used only the very first time the plugin starts, before anything has been persisted.
+starting-date-time:
+  year: 1
+  month: 1
+  day: 1
+  hour: 0
+  minute: 0
+  second: 0
+
+persistence:
+  file-name: chronos-time.db
+  persist-interval-seconds: 60
+
+debug: false

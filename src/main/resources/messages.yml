@@ -1,0 +1,27 @@
+# Chronos player-facing messages. MiniMessage formatting is supported.
+prefix: "<gray>[<gold>Chronos</gold>]</gray> "
+
+time-now: "<yellow>Time:</yellow> <white><hour>:<minute>:<second></white><pause_state>"
+time-date: "<yellow>Date:</yellow> <white>Day <day> of <month_name>, Year <year></white>"
+time-full: "<yellow>Date:</yellow> <white>Day <day> of <month_name>, Year <year></white> <yellow>Time:</yellow> <white><hour>:<minute>:<second></white><pause_state>"
+time-set-success: "<green>Calendar set to</green> <white>Day <day> of <month_name>, Year <year></white>."
+time-add-success: "<green>Added</green> <white><amount> <unit></white> <green>to the calendar.</green>"
+time-paused: "<green>The calendar has been paused.</green>"
+time-resumed: "<green>The calendar has been resumed.</green>"
+
+error-no-permission: "<red>You do not have permission to do that.</red>"
+error-invalid-unit: "<red>Unknown time unit.</red>"
+error-invalid-operation: "<red>That operation is not valid:</red> <white><reason></white>"
+
+calendar:
+  title: "<gold>Next 7 Days</gold>"
+  day-item-name: "<yellow><day_of_week_name></yellow><today_suffix>"
+  today-suffix: " <green>(Today)</green>"
+  day-date-line: "<gray>Day <day> of <month_name>, Year <year></gray>"
+  day-event-line: "<white>• <event_name></white>"
+  day-no-events: "<gray><italic>No events</italic></gray>"
+  previous-page: "<yellow>Previous Page</yellow>"
+  next-page: "<yellow>Next Page</yellow>"
+
+bossbar:
+  text: "<white>Day <day> of <month_name>, Year <year></white> <gray>•</gray> <yellow><hour>:<minute></yellow><pause_state>"
